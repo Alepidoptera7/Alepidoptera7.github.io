@@ -1,11 +1,7 @@
-# EXAMPLE ENTRY: delete it and add your own.
-# Write your name in `authors` exactly as `author.name` in _config.yml to have it underlined.
-# Fields: title, authors, venue, year, type (optional), doi, pdf, code, slides (all optional)
-
-- title: "Example title: replace with your paper"
-  authors: "A. Colleague, Your Name, B. Supervisor"
-  venue: "Journal or Conference Name"
+- title: ""
+  authors: "Andrew Lamothe"
+  venue: ""
   year: 2026
   type: Preprint
   doi: ""
-  code: https://github.com/yourusername/example
+  code:
