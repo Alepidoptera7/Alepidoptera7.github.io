@@ -1,0 +1,23 @@
+---
+layout: page
+title: Projects
+lede: Software, pipelines and datasets I build and maintain.
+permalink: /projects/
+---
+
+<!-- Edit the list in _data/projects.yml -->
+
+<div class="cards">
+{% for p in site.data.projects %}
+  <article class="card">
+    <h3>{{ p.name }}</h3>
+    <p>{{ p.description }}</p>
+    {% if p.stack %}<p class="stack-tags">{% for s in p.stack %}<span class="tag">{{ s }}</span>{% endfor %}</p>{% endif %}
+    <p class="links">
+      {% if p.repo %}<a href="{{ p.repo }}">Code</a>{% endif %}
+      {% if p.docs %}<a href="{{ p.docs }}">Docs</a>{% endif %}
+      {% if p.post %}<a href="{{ p.post | relative_url }}">Blog post</a>{% endif %}
+    </p>
+  </article>
+{% endfor %}
+</div>

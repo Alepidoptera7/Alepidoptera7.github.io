@@ -1,0 +1,9 @@
+# Top navigation. Order here is the order shown.
+- title: Blog
+  url: /blog/
+- title: Projects
+  url: /projects/
+- title: Publications
+  url: /publications/
+- title: About
+  url: /about/

@@ -1,0 +1,18 @@
+---
+layout: page
+title: Blog
+lede: Tutorials, method notes and analyses, newest first. Browse by topic on the tags page.
+permalink: /blog/
+---
+
+<p><a href="{{ '/tags/' | relative_url }}">Browse by tag &rarr;</a> &nbsp; <a href="{{ '/feed.xml' | relative_url }}">RSS feed</a></p>
+
+{% assign by_year = site.posts | group_by_exp: "p", "p.date | date: '%Y'" %}
+{% for year in by_year %}
+<h2 class="year" id="y{{ year.name }}">{{ year.name }}</h2>
+{% include post-list.html posts=year.items %}
+{% endfor %}
+
+{% if site.posts.size == 0 %}
+<p>No posts yet.</p>
+{% endif %}

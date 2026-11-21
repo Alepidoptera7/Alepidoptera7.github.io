@@ -1,0 +1,32 @@
+---
+layout: page
+title: Publications
+lede: Papers, preprints and talks. Your name is underlined in each author list.
+permalink: /publications/
+---
+
+<!-- Edit the list in _data/publications.yml. Newest first is up to you: order is kept as written. -->
+
+{% assign me = '<span class="me">' | append: site.author.name | append: '</span>' %}
+<ol class="pubs">
+{% for pub in site.data.publications %}
+  <li class="pub">
+    <span class="pub-year">{{ pub.year }}</span>
+    <div>
+      <p class="pub-title">{{ pub.title }}</p>
+      <p class="pub-authors">{{ pub.authors | replace: site.author.name, me }}</p>
+      <p class="pub-venue"><em>{{ pub.venue }}</em>{% if pub.type %} &middot; {{ pub.type }}{% endif %}</p>
+      <p class="pub-links">
+        {% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}">DOI</a>{% endif %}
+        {% if pub.pdf %}<a href="{{ pub.pdf | relative_url }}">PDF</a>{% endif %}
+        {% if pub.code %}<a href="{{ pub.code }}">Code</a>{% endif %}
+        {% if pub.slides %}<a href="{{ pub.slides | relative_url }}">Slides</a>{% endif %}
+      </p>
+    </div>
+  </li>
+{% endfor %}
+</ol>
+
+{% if site.social.google_scholar and site.social.google_scholar != "" %}
+<p>Full list on <a href="https://scholar.google.com/citations?user={{ site.social.google_scholar }}">Google Scholar</a>.</p>
+{% endif %}

@@ -1,0 +1,74 @@
+# ------------------------------------------------------------------
+#  Site settings: edit these first
+# ------------------------------------------------------------------
+title: Your Name
+tagline: Notes on genomics, pipelines and data
+description: >-
+  A bioinformatics blog: sequencing data analysis, reproducible pipelines,
+  and the occasional deep dive into algorithms behind the tools.
+
+author:
+  name: Your Name
+  role: Bioinformatician
+  affiliation: Your Institute or Lab
+  email: you@example.com
+
+# Social / academic profiles. Leave any of these blank to hide it.
+social:
+  github: Alepidoptera7
+  orcid: ""            # e.g. 0000-0002-1825-0097
+  google_scholar: ""   # the user ID in your Scholar profile URL
+  linkedin: ""
+  bluesky: ""          # e.g. yourname.bsky.social
+
+# The coloured strip of bases in the header. Any A/C/G/T string works.
+header_sequence: ATGGCGTACGATCGTTAGCCGATAGCTTACGGATCCGTAGCATGCTAGCTAACGGTACGTTGCA
+
+# ------------------------------------------------------------------
+#  URLs
+#  - Repo named yourusername.github.io  -> leave baseurl as ""
+#  - Any other repo name, e.g. "blog"   -> baseurl: "/blog"
+# ------------------------------------------------------------------
+url: https://alepidoptera7.github.io
+baseurl: ""
+
+# ------------------------------------------------------------------
+#  Build settings (all supported by GitHub Pages' built-in builder)
+# ------------------------------------------------------------------
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  hard_wrap: false
+
+permalink: /blog/:year/:month/:title/
+timezone: America/Los_Angeles
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+feed:
+  path: feed.xml
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .bundle
+  - .jekyll-cache
