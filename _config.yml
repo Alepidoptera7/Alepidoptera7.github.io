@@ -1,7 +1,7 @@
 # ------------------------------------------------------------------
 #  Site settings: edit these first
 # ------------------------------------------------------------------
-title: Andrew Lamothe
+title: Lamothe Bioinformatic Engineering
 tagline: Notes on genomics, pipelines and data
 description: >-
   A bioinformatics blog: sequencing data analysis, reproducible pipelines,
@@ -9,7 +9,7 @@ description: >-
 
 author:
   name: Andrew Lamothe
-  role: Bioinformatics Engineer
+  role: Bioinformatic Software Engineer
   affiliation: AlphaRose Therapeutics, Verdant Center for Spatial Biology
   email: quin_lamothe@berkeley.edu
 
