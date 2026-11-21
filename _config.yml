@@ -1,14 +1,14 @@
 # ------------------------------------------------------------------
 #  Site settings: edit these first
 # ------------------------------------------------------------------
-title: Your Name
+title: Andrew Lamothe
 tagline: Notes on genomics, pipelines and data
 description: >-
   A bioinformatics blog: sequencing data analysis, reproducible pipelines,
   and the occasional deep dive into algorithms behind the tools.
 
 author:
-  name: Your Name
+  name: Andrew Lamothe
   role: Bioinformatician
   affiliation: Your Institute or Lab
   email: you@example.com
@@ -18,8 +18,7 @@ social:
   github: Alepidoptera7
   orcid: ""            # e.g. 0000-0002-1825-0097
   google_scholar: ""   # the user ID in your Scholar profile URL
-  linkedin: ""
-  bluesky: ""          # e.g. yourname.bsky.social
+  linkedin: "https://www.linkedin.com/in/quin-lamothe/"
 
 # The coloured strip of bases in the header. Any A/C/G/T string works.
 header_sequence: ATGGCGTACGATCGTTAGCCGATAGCTTACGGATCCGTAGCATGCTAGCTAACGGTACGTTGCA
