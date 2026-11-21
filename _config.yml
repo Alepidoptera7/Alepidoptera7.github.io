@@ -16,11 +16,10 @@ author:
 # Social / academic profiles. Leave any of these blank to hide it.
 social:
   github: Alepidoptera7
-  orcid: ""            # e.g. 0000-0002-1825-0097
-  google_scholar: ""   # the user ID in your Scholar profile URL
+  orcid: 0009-0006-7419-1796
   linkedin: quin-lamothe
 
-# The coloured strip of bases in the header. Any A/C/G/T string works.
+
 header_sequence: GATAAGCAACAAGTTCCCCAGCGGTCTTCCCGCCCTAGCCTGACAAGGCGAAGGTTTTCTTACCTGGCGA
 
 
