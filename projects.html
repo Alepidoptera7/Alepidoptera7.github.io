@@ -7,6 +7,10 @@ permalink: /projects/
 
 <!-- Edit the list in _data/projects.yml -->
 
+{% if site.data.projects.size == 0 or site.data.projects == nil %}
+<p>No projects listed yet.</p>
+{% endif %}
+
 <div class="cards">
 {% for p in site.data.projects %}
   <article class="card">

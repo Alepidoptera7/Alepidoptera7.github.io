@@ -1,23 +1,14 @@
-# EXAMPLE ENTRIES: replace with your own projects.
-# Fields: name, description, stack (list), repo, docs, post (a site path like /blog/2026/11/some-post/)
-
-- name: rnaseq-qc-pipeline
-  description: >-
-    A small Snakemake workflow that runs FastQC, fastp and MultiQC on paired-end
-    RNA-seq reads and produces one QC report per run.
-  stack: [Snakemake, fastp, MultiQC, Docker]
-  repo: https://github.com/yourusername/rnaseq-qc-pipeline
-
-- name: fasta-tools
-  description: >-
-    Dependency-free Python helpers for reading FASTA/FASTQ, computing GC content
-    and sequence length statistics (N50, L50).
-  stack: [Python]
-  repo: https://github.com/yourusername/fasta-tools
-
-- name: variant-notebooks
-  description: >-
-    Jupyter notebooks that walk through germline variant calling with
-    bwa-mem2, GATK and bcftools on a public trio dataset.
-  stack: [Jupyter, GATK, bcftools]
-  repo: https://github.com/yourusername/variant-notebooks
+# Your projects. Until you add one, the Projects page says "No projects listed yet."
+#
+# To add a project, delete the [] on the last line and add entries like this
+# (remove the leading "# " from each line):
+#
+# - name: my-pipeline
+#   description: >-
+#     What it does in one or two sentences.
+#   stack: [Snakemake, Python, Docker]
+#   repo: https://github.com/Alepidoptera7/my-pipeline
+#   docs: ""                      # optional link to documentation
+#   post: ""                      # optional, e.g. /blog/2026/12/my-pipeline/
+#
+[]

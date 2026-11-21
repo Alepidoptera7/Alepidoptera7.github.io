@@ -1,14 +1,14 @@
 # ------------------------------------------------------------------
 #  Site settings: edit these first
 # ------------------------------------------------------------------
-title: Your Name
+title: Andrew Lamothe
 tagline: Notes on genomics, pipelines and data
 description: >-
   A bioinformatics blog: sequencing data analysis, reproducible pipelines,
   and the occasional deep dive into algorithms behind the tools.
 
 author:
-  name: Your Name
+  name: Andrew Lamothe
   role: Bioinformatician
   affiliation: Your Institute or Lab
   email: you@example.com

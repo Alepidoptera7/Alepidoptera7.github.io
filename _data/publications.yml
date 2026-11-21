@@ -1,11 +1,18 @@
-# EXAMPLE ENTRY: delete it and add your own.
-# Write your name in `authors` exactly as `author.name` in _config.yml to have it underlined.
-# Fields: title, authors, venue, year, type (optional), doi, pdf, code, slides (all optional)
-
-- title: "Example title: replace with your paper"
-  authors: "A. Colleague, Your Name, B. Supervisor"
-  venue: "Journal or Conference Name"
-  year: 2026
-  type: Preprint
-  doi: ""
-  code: https://github.com/yourusername/example
+# Your papers, preprints and talks, in the order you want them shown.
+# Until you add one, the Publications page says "No publications listed yet."
+#
+# To add one, delete the [] on the last line and add entries like this
+# (remove the leading "# " from each line). Write your name in `authors`
+# exactly as "Andrew Lamothe" to have it underlined.
+#
+# - title: "Title of the paper"
+#   authors: "A. Colleague, Andrew Lamothe, B. Supervisor"
+#   venue: "Journal or Conference Name"
+#   year: 2026
+#   type: Preprint                 # optional: Preprint, Poster, Talk...
+#   doi: "10.1101/2026.01.01.123456"
+#   pdf: ""                        # optional, e.g. /assets/papers/paper.pdf
+#   code: ""                       # optional link to code
+#   slides: ""                     # optional
+#
+[]

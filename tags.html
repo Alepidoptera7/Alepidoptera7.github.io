@@ -6,6 +6,7 @@ permalink: /tags/
 ---
 
 {% assign tags = site.tags | sort %}
+{% if tags.size == 0 %}<p>No tags yet. Add <code>tags: [topic]</code> to a post's front matter.</p>{% endif %}
 
 <p class="tags">
 {% for tag in tags %}<a class="tag" href="#{{ tag[0] | slugify }}">{{ tag[0] }} ({{ tag[1].size }})</a>{% endfor %}

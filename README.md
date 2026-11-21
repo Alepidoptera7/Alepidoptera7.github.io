@@ -40,9 +40,15 @@ plugins that GitHub Pages supports (`jekyll-feed`, `jekyll-seo-tag`,
 | Menu links                    | `_data/navigation.yml`        |
 | Colours and fonts             | `assets/css/main.css` (top)   |
 
-The three posts in `_posts/` and the entries in `_data/` are examples. Replace
-or delete them. `_posts/2026-11-20-how-to-write-posts.md` shows every
-formatting feature (code, equations, tables, figures, callouts).
+`_posts/` starts empty (the `.gitkeep` file only keeps the folder in Git).
+`_data/projects.yml` and `_data/publications.yml` contain commented templates
+showing the fields; until you add entries, those pages say nothing is listed yet.
+
+Formatting you can use in posts: fenced code blocks with a language name
+(```` ```python ````), `$$ ... $$` equations (with `math: true`), Markdown
+tables, images from `assets/img/`, a table of contents (`* TOC` then `{:toc}`
+on the next line), and note/warning boxes (`{: .note}` or `{: .warn}` on the
+line after a paragraph).
 
 ## Write a post
 

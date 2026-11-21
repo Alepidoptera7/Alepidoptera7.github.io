@@ -8,6 +8,10 @@ permalink: /publications/
 <!-- Edit the list in _data/publications.yml. Newest first is up to you: order is kept as written. -->
 
 {% assign me = '<span class="me">' | append: site.author.name | append: '</span>' %}
+{% if site.data.publications.size == 0 or site.data.publications == nil %}
+<p>No publications listed yet.</p>
+{% endif %}
+
 <ol class="pubs">
 {% for pub in site.data.publications %}
   <li class="pub">
