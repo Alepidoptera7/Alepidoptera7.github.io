@@ -18,7 +18,7 @@ social:
   github: Alepidoptera7
   orcid: ""            # e.g. 0000-0002-1825-0097
   google_scholar: ""   # the user ID in your Scholar profile URL
-  linkedin: "https://www.linkedin.com/in/quin-lamothe/"
+  linkedin: quin-lamothe
 
 # The coloured strip of bases in the header. Any A/C/G/T string works.
 header_sequence: ATGGCGTACGATCGTTAGCCGATAGCTTACGGATCCGTAGCATGCTAGCTAACGGTACGTTGCA
