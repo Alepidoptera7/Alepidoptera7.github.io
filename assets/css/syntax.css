@@ -1,0 +1,18 @@
+/* Rouge syntax highlighting, light and dark. Classes are Pygments-compatible. */
+.highlight { --c-com: #6a737d; --c-key: #b3245b; --c-str: #12733f; --c-num: #1f5fd6; --c-fun: #6f42c1; --c-var: #b05a00; --c-err: #d6332a; color: var(--ink); }
+@media (prefers-color-scheme: dark) {
+  .highlight { --c-com: #8b949e; --c-key: #ff7ba6; --c-str: #7ee2a8; --c-num: #79a6ff; --c-fun: #c9a6ff; --c-var: #ffb86b; --c-err: #ff6b5e; }
+}
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cm, .highlight .cpf, .highlight .c1, .highlight .cs { color: var(--c-com); font-style: italic; }
+.highlight .cp { color: var(--c-key); }
+.highlight .k, .highlight .kc, .highlight .kd, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kt, .highlight .ow { color: var(--c-key); }
+.highlight .s, .highlight .sa, .highlight .sb, .highlight .sc, .highlight .dl, .highlight .sd, .highlight .s2, .highlight .se, .highlight .sh, .highlight .si, .highlight .sx, .highlight .sr, .highlight .s1, .highlight .ss { color: var(--c-str); }
+.highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mx { color: var(--c-num); }
+.highlight .nf, .highlight .fm, .highlight .nc, .highlight .nn, .highlight .nd { color: var(--c-fun); }
+.highlight .nb, .highlight .bp, .highlight .no { color: var(--c-num); }
+.highlight .nv, .highlight .vc, .highlight .vg, .highlight .vi, .highlight .vm, .highlight .na, .highlight .nt { color: var(--c-var); }
+.highlight .err { color: var(--c-err); }
+.highlight .gd { color: var(--c-err); }
+.highlight .gi { color: var(--c-str); }
+.highlight .gh, .highlight .gu { color: var(--c-fun); font-weight: 600; }
+.highlight .gp { color: var(--c-com); user-select: none; }

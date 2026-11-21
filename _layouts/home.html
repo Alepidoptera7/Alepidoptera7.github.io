@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<section class="intro">
+  <div class="intro-text">
+    <h1>{{ site.author.name }}</h1>
+    <p class="intro-role">{{ site.author.role }}{% if site.author.affiliation %} &middot; {{ site.author.affiliation }}{% endif %}</p>
+    <div class="prose">
+      {{ content }}
+    </div>
+    {% include social.html %}
+  </div>
+  <figure class="helix" aria-hidden="true">
+    {% include helix.svg %}
+  </figure>
+</section>
+
+<section class="recent">
+  <div class="section-head">
+    <h2>Recent posts</h2>
+    <a href="{{ '/blog/' | relative_url }}">All posts &rarr;</a>
+  </div>
+  {% assign recent = site.posts | slice: 0, 5 %}
+  {% include post-list.html posts=recent %}
+</section>

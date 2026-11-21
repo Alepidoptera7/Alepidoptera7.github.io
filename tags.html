@@ -1,0 +1,18 @@
+---
+layout: page
+title: Tags
+lede: Every post, grouped by topic.
+permalink: /tags/
+---
+
+{% assign tags = site.tags | sort %}
+
+<p class="tags">
+{% for tag in tags %}<a class="tag" href="#{{ tag[0] | slugify }}">{{ tag[0] }} ({{ tag[1].size }})</a>{% endfor %}
+</p>
+
+{% for tag in tags %}
+<h2 class="year" id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
+{% assign tag_posts = tag[1] %}
+{% include post-list.html posts=tag_posts %}
+{% endfor %}

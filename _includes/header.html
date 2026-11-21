@@ -1,0 +1,15 @@
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <nav class="site-nav" aria-label="Main">
+      {% for item in site.data.navigation %}
+        {% assign item_url = item.url | relative_url %}
+        <a href="{{ item_url }}"{% if page.url contains item.url %} aria-current="page"{% endif %}>{{ item.title }}</a>
+      {% endfor %}
+    </nav>
+  </div>
+  <div class="seq-strip" aria-hidden="true"><div class="seq-track">
+    {%- assign bases = site.header_sequence | upcase | split: "" -%}
+    {%- for copy in (1..8) -%}{%- for b in bases -%}<span class="b-{{ b }}">{{ b }}</span>{%- endfor -%}{%- endfor -%}
+  </div></div>
+</header>
