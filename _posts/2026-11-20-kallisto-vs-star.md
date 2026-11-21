@@ -1,6 +1,6 @@
 ---
 title: "kallisto vs STAR: pseudoalignment or full alignment for RNA-seq?"
-description: How the two most common RNA-seq quantification tools differ, how each handles spliced reads, how their output feeds featureCounts and tximport, and complete commands to run both on the same paired-end samples.
+description: How the two most common RNA-seq quantification tools differ, how each handles spliced reads, respective interfacing with tximport and featureCounts, and complete commands to run both on the same paired-end samples.
 tags: [rna-seq, alignment, quantification, tutorial]
 ---
 
