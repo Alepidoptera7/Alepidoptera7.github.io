@@ -1,7 +1,7 @@
 ---
 title: "Nextflow vs Snakemake: choosing a workflow manager for bioinformatics"
 date: 2026-11-20 21:00:00 -0800
-description: How Nextflow and Snakemake think about pipelines, where each one shines, and the same small RNA-seq pipeline (fastp, kallisto, MultiQC) written in both.
+description: How Nextflow and Snakemake think about pipelines, use-case distinctions, and the same small RNA-seq pipeline (fastp, kallisto, MultiQC) written in both.
 tags: [workflows, nextflow, snakemake, reproducibility, tutorial]
 ---
 
